@@ -1,0 +1,14 @@
+# Node.js dependencies
+node_modules/
+
+# Tailwind CSS output
+dist/
+build/
+*.css
+!src/styles.css  # Include your source CSS file if needed
+
+# Optional: OS and IDE-specific files
+.DS_Store
+*.log
+.vscode/
+.idea/
