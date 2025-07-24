@@ -809,6 +809,11 @@
       font-size: 3.25rem;
     }
   }
+  .xl\:w-\[100vw\] {
+    @media (width >= 80rem) {
+      width: 100vw;
+    }
+  }
 }
 @property --tw-font-weight {
   syntax: "*";
