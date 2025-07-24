@@ -334,14 +334,23 @@
   .w-\[100\%\] {
     width: 100%;
   }
+  .w-\[100vw\] {
+    width: 100vw;
+  }
   .w-\[286px\] {
     width: 286px;
   }
   .w-\[540px\] {
     width: 540px;
   }
+  .w-dvw {
+    width: 100dvw;
+  }
   .w-full {
     width: 100%;
+  }
+  .max-w-\[1140px\] {
+    max-width: 1140px;
   }
   .list-disc {
     list-style-type: disc;
