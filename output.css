@@ -322,6 +322,9 @@
   .h-\[38px\] {
     height: 38px;
   }
+  .w-\[33\.33\%\] {
+    width: 33.33%;
+  }
   .w-\[50\%\] {
     width: 50%;
   }
@@ -369,6 +372,9 @@
   }
   .items-center {
     align-items: center;
+  }
+  .justify-around {
+    justify-content: space-around;
   }
   .justify-between {
     justify-content: space-between;
@@ -772,6 +778,16 @@
   .sm\:gap-x-20 {
     @media (width >= 40rem) {
       column-gap: calc(var(--spacing) * 20);
+    }
+  }
+  .sm\:gap-x-32 {
+    @media (width >= 40rem) {
+      column-gap: calc(var(--spacing) * 32);
+    }
+  }
+  .sm\:gap-x-40 {
+    @media (width >= 40rem) {
+      column-gap: calc(var(--spacing) * 40);
     }
   }
   .sm\:px-12 {
