@@ -430,6 +430,9 @@
   .gap-x-5 {
     column-gap: calc(var(--spacing) * 5);
   }
+  .gap-x-10 {
+    column-gap: calc(var(--spacing) * 10);
+  }
   .gap-y-5 {
     row-gap: calc(var(--spacing) * 5);
   }
@@ -631,6 +634,11 @@
   .sm\:mb-10 {
     @media (width >= 40rem) {
       margin-bottom: calc(var(--spacing) * 10);
+    }
+  }
+  .sm\:mb-24 {
+    @media (width >= 40rem) {
+      margin-bottom: calc(var(--spacing) * 24);
     }
   }
   .sm\:mb-30 {
