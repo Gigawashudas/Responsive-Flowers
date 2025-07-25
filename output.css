@@ -560,6 +560,11 @@
       width: 50%;
     }
   }
+  .sm\:w-\[70\%\] {
+    @media (width >= 40rem) {
+      width: 70%;
+    }
+  }
   .sm\:w-\[80\%\] {
     @media (width >= 40rem) {
       width: 80%;
@@ -668,6 +673,16 @@
   .sm\:text-\[3\.25rem\] {
     @media (width >= 40rem) {
       font-size: 3.25rem;
+    }
+  }
+  .xl\:w-\[100\%\] {
+    @media (width >= 80rem) {
+      width: 100%;
+    }
+  }
+  .xl\:w-\[100vw\] {
+    @media (width >= 80rem) {
+      width: 100vw;
     }
   }
   .xl\:w-dvw {
