@@ -663,6 +663,11 @@
       width: 100vw;
     }
   }
+  .xl\:w-dvw {
+    @media (width >= 80rem) {
+      width: 100dvw;
+    }
+  }
 }
 @property --tw-font-weight {
   syntax: "*";
