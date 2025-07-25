@@ -208,6 +208,9 @@
   .mr-\[48px\] {
     margin-right: 48px;
   }
+  .mb-2 {
+    margin-bottom: calc(var(--spacing) * 2);
+  }
   .mb-2\.5 {
     margin-bottom: calc(var(--spacing) * 2.5);
   }
@@ -232,6 +235,9 @@
   .hidden {
     display: none;
   }
+  .table {
+    display: table;
+  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
@@ -240,9 +246,6 @@
   }
   .h-60 {
     height: calc(var(--spacing) * 60);
-  }
-  .h-90 {
-    height: calc(var(--spacing) * 90);
   }
   .h-\[38px\] {
     height: 38px;
@@ -268,8 +271,8 @@
   .w-\[100\%\] {
     width: 100%;
   }
-  .w-\[100vw\] {
-    width: 100vw;
+  .w-\[100dvw\] {
+    width: 100dvw;
   }
   .w-\[286px\] {
     width: 286px;
@@ -279,6 +282,12 @@
   }
   .max-w-\[1140px\] {
     max-width: 1140px;
+  }
+  .border-collapse {
+    border-collapse: collapse;
+  }
+  .resize {
+    resize: both;
   }
   .list-disc {
     list-style-type: disc;
@@ -324,6 +333,10 @@
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
   }
   .border-\[\#e95a08\] {
     border-color: #e95a08;
@@ -427,6 +440,10 @@
   }
   .bg-blend-multiply {
     background-blend-mode: multiply;
+  }
+  .outline {
+    outline-style: var(--tw-outline-style);
+    outline-width: 1px;
   }
   .max-sm\:order-3 {
     @media (width < 40rem) {
@@ -653,30 +670,32 @@
       font-size: 3.25rem;
     }
   }
-  .xl\:w-\[100\%\] {
-    @media (width >= 80rem) {
-      width: 100%;
-    }
-  }
-  .xl\:w-\[100vw\] {
-    @media (width >= 80rem) {
-      width: 100vw;
-    }
-  }
   .xl\:w-dvw {
     @media (width >= 80rem) {
       width: 100dvw;
     }
   }
 }
+@property --tw-border-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @property --tw-font-weight {
   syntax: "*";
   inherits: false;
 }
+@property --tw-outline-style {
+  syntax: "*";
+  inherits: false;
+  initial-value: solid;
+}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-border-style: solid;
       --tw-font-weight: initial;
+      --tw-outline-style: solid;
     }
   }
 }
